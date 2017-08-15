@@ -50,10 +50,10 @@ input::placeholder {
 }
 
 .classyBtn {
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
   font-family: 'Lato';
   font-size: 1.5rem;
   color: #fff;
@@ -63,6 +63,7 @@ input::placeholder {
   transition: all ease 0.4s;
   white-space: normal;
   justify-content: center;
+  width: 300px;
 }
 
 .classyBtn:focus {
