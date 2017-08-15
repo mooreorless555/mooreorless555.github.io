@@ -48,6 +48,10 @@ input::placeholder {
   color: rgba(255, 255, 255, 0.3)
 }
 
+#emailField {
+  width: 100%;
+}
+
 .classyBtn {
   padding-left: 40px;
   padding-right: 40px;
