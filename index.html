@@ -7,11 +7,9 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/0.7.0/jquery.velocity.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/0.7.0/velocity.ui.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.5/angular.min.js"></script>
+  <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script src="js/splash.js"></script>
-<link rel="stylesheet" href="css/splash.css">
-
 <script type="text/javascript">
    (function(){
       emailjs.init("user_YIRPAcDCfcv1FXy8VIWX5");
@@ -39,15 +37,16 @@
 
 <div class="emailbox">
  <img class="logo stag" src="https://firebasestorage.googleapis.com/v0/b/moves-ad1b4.appspot.com/o/MOVES_logo2.png?alt=media&token=d7dbd4a2-c866-4080-910d-ed82fafb91bb"/>
+  <div id="container" class="container"></div>
   <form onsubmit="addToDB($('#emailField').val())">
-    <div style="width: 100%;"><input class="stag" id="emailField" type="text" placeholder="Your Yale email here!" spellcheck="false"></>
+    <div><input class="stag" id="emailField" type="text" placeholder="Type your Yale email here!" spellcheck="false" autocomplete"true"></>
     </div>
   <input type="submit" id="submitBtn" value="Get notified!" class="classyBtn stag"/>
   </form>
 
 <!--   <button onclick="addToDB($('#emailField').val())" id="submitBtn" class="classyBtn">Get notified!</button> -->
   
-  <div class="notice stag" id="notice"></div>
+  <div class="notice stag" id="notice">hi</div>
          <div>
       <img id="androidBadge" class="badges-md stag" src="https://firebasestorage.googleapis.com/v0/b/moves-ad1b4.appspot.com/o/google-play-badge.png?alt=media&token=b08bcf41-e4e4-4b05-b707-668cac9ad68f"/>
     
