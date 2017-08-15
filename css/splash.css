@@ -48,7 +48,7 @@ input::placeholder {
   color: rgba(255, 255, 255, 0.3)
 }
 
-#emailField {
+input #emailField {
   width: 100%;
 }
 
