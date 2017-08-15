@@ -21,7 +21,7 @@ body {
   width: 100%;
 }
 
-input {
+#emailField {
   font-family: 'Lato';
   font-size: 30px;
   border: none;
@@ -32,9 +32,6 @@ input {
   transition: all ease 0.4s;
   overflow-wrap: break-word;
   resize: none;
-}
-
-#emailField {
   width: 100%;
 }
 
