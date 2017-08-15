@@ -17,11 +17,11 @@ body {
   align-content: center;
   align-items: center;
   text-align: center;
-  font-size: 4rem;
   width: 100%;
+  font-size: 4rem;
 }
 
-#emailField {
+input {
   font-family: 'Lato';
   font-size: 30px;
   border: none;
@@ -32,7 +32,6 @@ body {
   transition: all ease 0.4s;
   overflow-wrap: break-word;
   resize: none;
-  width: 100%;
 }
 
 input:hover {
@@ -50,10 +49,10 @@ input::placeholder {
 }
 
 .classyBtn {
-  padding-left: 40px !important;
-  padding-right: 40px !important;
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-family: 'Lato';
   font-size: 1.5rem;
   color: #fff;
@@ -63,7 +62,6 @@ input::placeholder {
   transition: all ease 0.4s;
   white-space: normal;
   justify-content: center;
-  width: 300px;
 }
 
 .classyBtn:focus {
