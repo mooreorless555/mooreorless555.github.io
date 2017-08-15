@@ -76,6 +76,7 @@ function displayNotice(text, color) {
   noticeText.style.color = color;
   $('#submitBtn')[0].disabled = true;
   $('.notice').removeClass('stag').velocity('transition.bounceIn');
+  $('#emailField').width('100%')
   setTimeout(function() {
     $('.notice').velocity('transition.bounceOut').addClass('stag');
     $('#submitBtn')[0].disabled = false;
