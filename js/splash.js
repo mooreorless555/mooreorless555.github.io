@@ -146,7 +146,7 @@ function showProgressBar() {
   var inputStr = $(this).val()
   var inputLength = inputStr.length;
   var func = function(x) {
-    return (Math.pow(x, 2)-x)/Math.pow(x, 2)
+    return (Math.pow(x, 1.4)-x)/Math.pow(x, 1.4)
   }
   
   if (validateEmail(inputStr)) {
