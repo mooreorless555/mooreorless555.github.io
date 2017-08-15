@@ -36,9 +36,9 @@ movesDB.push = function(dBObject, dBPath) {
 function validateEmail(email) {
 var re = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
   if (re.test(email)) {
-    if (email.endsWith('@yale.edu')) {
+    // if (email.endsWith('@yale.edu')) {
       return true;
-    }
+    // }
   }
   
   return false;
@@ -77,7 +77,7 @@ function displayNotice(text, color) {
   $('#submitBtn')[0].disabled = true;
   $('.notice').removeClass('stag').velocity('transition.bounceIn');
   setTimeout(function() {
-    $('.notice').velocity('transition.bounceOut').addClass('stag');
+    $('.notice').velocity({scale : 0, opacity: 0}, {duration : 800, easing: 'easeInBack'}).velocity({scale: 1}).addClass('stag');
     $('#submitBtn')[0].disabled = false;
   }, 3000)
 
@@ -132,9 +132,33 @@ function introducePage() {
    
 }
 
-
+function showProgressBar() {
+ var bar = new ProgressBar.SemiCircle(container, {
+  strokeWidth: 18,
+  easing: 'easeInOut',
+  duration: 1000,
+  color: '#FFFFFF',
+  svgStyle: null
+}); 
+  bar.animate(0.0)
+  
+  $('input').keyup(function(){
+  var inputStr = $(this).val()
+  var inputLength = inputStr.length;
+  var func = function(x) {
+    return (Math.pow(x, 2)-x)/Math.pow(x, 2)
+  }
+  
+  if (validateEmail(inputStr)) {
+     bar.animate(1.0)
+  } else {
+    bar.animate(func(inputLength))
+  }
+});
+}
 
 $( document ).ready(function() {
   introducePage();
+  showProgressBar();
 });
 
