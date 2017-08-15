@@ -63,7 +63,7 @@ input::placeholder {
   transition: all ease 0.4s;
   white-space: normal;
   justify-content: center;
-  width: 30%;
+  width: 30% !important;
 }
 
 .classyBtn:focus {
@@ -77,7 +77,7 @@ input::placeholder {
   color:  #fff;
   background-color: #ac75ff;
   transform: scale(1.1);
-  width: 40%;
+  width: 40% !important;
 }
 
 .classyBtn:active:enabled {
