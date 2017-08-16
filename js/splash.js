@@ -158,7 +158,7 @@ function showProgressBar() {
 }
 
 $( document ).ready(function() {
-  introducePage();
+//  introducePage();
   showProgressBar();
 });
 
