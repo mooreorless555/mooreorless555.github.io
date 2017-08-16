@@ -114,7 +114,7 @@ function sendGreetingEmail(email, subject) {
 }
 
 function introducePage() {
-  $('.whiteFade').velocity('transition.fadeOut', {duration: 3000})
+ // $('.whiteFade').velocity('transition.fadeOut', {duration: 3000})
   setTimeout(function() {
     $('.logo').removeClass('stag').velocity('transition.flipXIn', {duration: 2000, ease: 'easeOutSine'})
   }, 1000)
@@ -159,7 +159,7 @@ function showProgressBar() {
 }
 
 $( document ).ready(function() {
-//  introducePage();
+  introducePage();
   showProgressBar();
 });
 
