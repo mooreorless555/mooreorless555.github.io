@@ -22,6 +22,10 @@ body {
   -webkit-transform: scale(1.03);
 }
 
+.mini-title {
+  font-size: 15px;
+}
+
 .notice {
   margin-top: 30px;
   font-size: 1.7rem;
