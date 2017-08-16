@@ -144,6 +144,8 @@ input::placeholder {
 
 .stag {
   opacity: 0;
+  -moz-opacity: 0;
+  -webkit-opacity: 0;
   transform: scale(1);
   -webkit-transform: scale(1);
 }
