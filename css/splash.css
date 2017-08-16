@@ -114,6 +114,7 @@ input::placeholder {
 }
 
 .logo:hover {
+  margin-top: 2%;
   transform: scale(1.05);
 }
 
