@@ -57,7 +57,7 @@ function addToDB(item) {
     if (alreadyExists) { // if the email already exists
       displayNotice('Looks like this email is already in the panlist.', '#fff')
     } else { // if not!
-      displayNotice('Sweet. Thanks for your interest!', '#fff')
+      displayNotice('Lit. Thanks for your interest!', '#fff')
       movesDB.push({email: item}, dBPath); 
       sendGreetingEmail(item, "Here we go!");
       $('#emailField').val("")
