@@ -119,6 +119,7 @@ function introducePage() {
     $('.logo').removeClass('stag').velocity('transition.flipXIn', {duration: 2000, ease: 'easeOutSine'})
   }, 1000)
    setTimeout(function() {
+    $('.mini-title').removeClass('stag').velocity('transition.bounceIn')
     $('#emailField').removeClass('stag').velocity('transition.fadeIn')
   }, 1500)
    setTimeout(function() {
