@@ -126,6 +126,9 @@ function introducePage() {
     $('#submitBtn').removeClass('stag').velocity('transition.fadeIn')
   }, 1700)
    setTimeout(function() {
+    $('#downloadBtn').removeClass('stag').velocity('transition.bounceIn')
+  }, 2000)
+   setTimeout(function() {
     $('#androidBadge').removeClass('stag').velocity('transition.bounceIn')
   }, 2600)
    setTimeout(function() {
