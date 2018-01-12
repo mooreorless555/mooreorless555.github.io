@@ -1,0 +1,276 @@
+@import '~antd/dist/antd.css'; 
+ 
+@font-face {
+  font-family: Avenir;
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/Lato-Bold.ttf');
+}
+
+@font-face {
+  font-family: LatoLight;
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/Lato-Light.ttf');
+}
+
+@font-face {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: SourceSansBold;
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/SourceSansPro-Bold.ttf');
+}
+/* 
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-leave {
+  opacity: 1;
+}
+
+.fade-leave.fade-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+} */
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: all 500ms ease-in;
+}
+
+.fade-leave {
+  opacity: 1;
+}
+
+.fade-leave.fade-leave-active {
+  opacity: 0.01;
+  transition: all 300ms ease-in;
+}
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.spacer {
+  margin-bottom: 30px;
+}
+
+#showcase {
+  background-color: #886fe8;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+#showcase #logo {
+   max-width: 45vw;
+   object-fit: contain; 
+}
+
+#showcase #buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#showcase #welcome {
+  font-family: 'Avenir';
+  text-align: center;
+}
+
+#showcase #buttons div {
+  padding: 10px;
+  transition: all ease 0.2s;
+}
+
+#showcase #buttons div Button:hover {
+  transform: scale(1.03);
+}
+
+#showcase #buttons div Button:active {
+  transform: scale(0.97);
+}
+
+#section-a {
+  color: #886fe8;
+  height: 40%;
+  width: 100%;
+  font-family: 'Lato';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5% 10%;
+}
+
+#section-a #title {
+  font-family: 'Avenir';
+  height: 20%;
+  font-size: 6vh;
+}
+
+#section-a #caption {
+  color: #886fe8;
+  font-size: 200%;
+  padding: 0 10%;
+}
+
+#section-b {
+  background-color: #333;
+  height: 40%;
+  width: 100%;
+  font-family: 'Lato';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5% 10%;
+}
+
+#section-b #title {
+  font-family: 'Avenir';
+  height: 20%;
+  font-size: 6vh;
+  color: #fff;
+}
+
+#section-b #subtitle {
+  font-family: 'SourceSansBold';
+  font-size: 5vh;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#section-b #caption {
+  color: #ffffff;
+  font-size: 200%;
+  padding: 0 10%;
+  line-height: 3rem;
+}
+
+#section-b #caption #h {
+  color: #886fe8;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#section-c {
+  color: #333;
+  height: 40%;
+  width: 100%;
+  font-family: 'Lato';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5% 10%;
+}
+
+#section-c #title {
+  font-family: 'Avenir';
+  height: 20%;
+  font-size: 6vh;
+}
+
+#section-c #caption {
+  color: #333;
+  font-size: 200%;
+  padding: 0 10%;
+}
+
+#section-d {
+  color: #333;
+  height: 40%;
+  width: 100%;
+  font-family: 'Lato';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5% 10%;
+}
+
+#section-d #colleges {
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#section-d #colleges img {
+  max-height: 50%;
+  max-width: 50%;
+  padding: 3% 0;
+}
+
+#section-d #title {
+  font-family: 'Avenir';
+  height: 20%;
+  font-size: 6vh;
+}
+
+#section-d #caption {
+  color: #333;
+  font-size: 200%;
+  padding: 0 10%;
+}
+
+#small {
+  font-size: 80%;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
