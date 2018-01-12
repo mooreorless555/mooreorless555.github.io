@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Moves</title>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/velocity/0.7.0/jquery.velocity.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/velocity/0.7.0/velocity.ui.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.5/angular.min.js"></script>
+  <script src="https://rawgit.com/kimmobrunfeldt/progressbar.js/1.0.0/dist/progressbar.js"></script>
+  <script src="js/splash.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_YIRPAcDCfcv1FXy8VIWX5");
+   })();
+</script>  
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyANmdr_oNcjak8eVKUI7esAoyk4mtWKD-M",
+    authDomain: "moves-ad1b4.firebaseapp.com",
+    databaseURL: "https://moves-ad1b4.firebaseio.com",
+    projectId: "moves-ad1b4",
+    storageBucket: "moves-ad1b4.appspot.com",
+    messagingSenderId: "583373480587"
+  };
+  firebase.initializeApp(config);
+</script>
+  
+ <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+ <link href="css/splash.css" rel="stylesheet">                                                                         
+  
+</head>
+  <body class="bg">
+    <div class="overlay">
+
+<div class="emailbox">
+ <img class="logo stag" src="https://firebasestorage.googleapis.com/v0/b/moves-ad1b4.appspot.com/o/MOVES_logo2.png?alt=media&token=d7dbd4a2-c866-4080-910d-ed82fafb91bb"/>
+  <div class="mini-title stag">Camp Yale boutta be lit.</div>
+  <div id="container" class="container"></div>
+  <form onsubmit="addToDB($('#emailField').val())">
+    <div><input class="stag" id="emailField" type="text" placeholder="Type your Yale email here!" spellcheck="false" autocomplete"true"></>
+    </div>
+  <input type="submit" id="submitBtn" value="Get notified!" class="classyBtn stag"/>
+  </form>
+
+  <a href="http://onelink.to/9tg25k" target="_blank"><button id="downloadBtn" class="classyBtn stag" style="background-color: #FFA500">Tap to download now!</button></a>
+  
+  <div class="notice stag" id="notice"> </div>
+         <div>
+      <a href="https://play.google.com/store/apps/details?id=com.ionicframework.movesyale428225" target="_blank"><img id="androidBadge" class="badges-md stag" src="https://firebasestorage.googleapis.com/v0/b/moves-ad1b4.appspot.com/o/google-play-badge.png?alt=media&token=b08bcf41-e4e4-4b05-b707-668cac9ad68f"/></a>
+    
+      <a href="https://itunes.apple.com/us/app/movesy/id1271228527" target="_blank"><img id="iosBadge" class="badges-ios stag" src="https://firebasestorage.googleapis.com/v0/b/moves-ad1b4.appspot.com/o/download-on-the-app-store.png?alt=media&token=264bce78-06c0-400c-9477-3a5e541dd903"/></a>
+      </div>   
+ </div>
+    </div>
+  </body>
+</html>

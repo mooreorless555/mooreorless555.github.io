@@ -1,0 +1,178 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  background-color: #222;
+  color: #fff;
+  font-family: 'Lato';
+}
+
+.container {
+  width: 300px;
+  margin: auto;
+  transition: all ease 0.2s;
+  -webkit-transition: all ease 0.2s;
+  transform: scale(1.0);
+  -webkit-transform: scale(1.0);
+}
+
+.container:hover {
+  transform: scale(1.03);
+  -webkit-transform: scale(1.03);
+}
+
+.mini-title {
+  font-size: 15px;
+}
+
+.notice {
+  margin-top: 30px;
+  font-size: 1.7rem;
+}
+
+.emailbox {
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  font-size: 4rem;
+}
+
+input {
+  font-family: 'Lato';
+  font-size: 30px;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  transition: all ease 0.4s;
+  text-align: center;
+  transition: all ease 0.4s;
+  overflow-wrap: break-word;
+  resize: none;
+}
+
+input:hover {
+  outline: none;
+  transform: scale(1.05);
+}
+
+input:focus {
+  outline: none;
+  transform: scale(1.1);
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.3)
+}
+
+#emailField {
+  width: 100%;
+}
+
+.classyBtn {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: 'Lato';
+  font-size: 1.5rem;
+  color: #fff;
+  background-color: #8942f4;
+  border: none;
+  border-radius: 30px;
+  transition: all ease 0.4s;
+  white-space: normal;
+  justify-content: center;
+}
+
+.classyBtn:focus {
+  outline: none;
+}
+
+.classyBtn:hover:enabled {
+  padding-left: 60px;
+  padding-right: 60px;
+  border-radius: 20px;
+  color:  #fff;
+  background-color: #ac75ff;
+  transform: scale(1.1);
+}
+
+.classyBtn:active:enabled {
+  padding-right: 90px;
+  padding-left: 90px;
+  transform: scale(1.0);
+}
+
+.classyBtn:disabled {
+  color: #777;
+  background-color: #333;
+}
+
+.logo {
+  margin-top: 2%;
+  width: 425px;
+  max-width: 75%;
+  transition: all ease 0.4s;
+}
+
+.logo:hover {
+  margin-top: 2%;
+  transform: scale(1.05);
+}
+
+.bg {
+    background: url("https://firebasestorage.googleapis.com/v0/b/moves-ad1b4.appspot.com/o/MOVES_bg_real.png?alt=media&token=34a464e9-9b18-4ed8-9e0e-f83088855efb");
+-webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+  
+}
+
+.overlay {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, 0.1); /*can be anything, of course*/
+}
+
+.stag {
+  opacity: 0;
+  -moz-opacity: 0;
+  -webkit-opacity: 0;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+}
+
+.whiteFade {
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0px;
+    left: 0px;
+    background: rgba(255, 255, 255, 1); /*can be anything, of course*/  
+}
+
+.badges-md {
+  width: 270px;
+  position: relative;
+  top: 13x;
+}
+
+.badges-ios {
+  position: relative;
+  width: 250px;
+  bottom: 13px;
+}
